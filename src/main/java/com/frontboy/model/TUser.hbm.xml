@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.frontboy.model.TUser" table="t_user" schema="integrity">
+        <id name="username" column="username"/>
+        <property name="roleid" column="roleid"/>
+        <property name="password" column="password"/>
+        <property name="realname" column="realname"/>
+        <property name="gender" column="gender"/>
+        <property name="phone" column="phone"/>
+        <property name="level" column="level"/>
+        <property name="avatar" column="avatar"/>
+        <property name="language" column="language"/>
+        <property name="enabled" column="enabled"/>
+        <property name="token" column="token"/>
+    </class>
+</hibernate-mapping>

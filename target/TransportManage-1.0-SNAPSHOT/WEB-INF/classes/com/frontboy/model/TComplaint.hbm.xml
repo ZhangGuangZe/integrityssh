@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.frontboy.model.TComplaint" table="t_complaint" schema="integrity">
+        <id name="id" column="id"/>
+        <property name="object" column="object"/>
+        <property name="reason" column="reason"/>
+        <property name="status" column="status"/>
+        <property name="time" column="time"/>
+        <property name="operator" column="operator"/>
+        <property name="result" column="result"/>
+        <property name="username" column="username"/>
+        <property name="remark" column="remark"/>
+    </class>
+</hibernate-mapping>

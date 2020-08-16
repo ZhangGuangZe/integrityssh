@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--配置数据库连接-->
+    <property name="connection.url">jdbc:mysql://localhost:3306/integrity</property>
+    <!--若驱动导入报错，请检查是否倒入了相关数据库连接的Jar包-->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">123456</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
+    <mapping resource="com/frontboy/model/TBlock.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TComplaint.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TEvaluation.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TMenu.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TRedBlock.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TRole.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TTravelagency.hbm.xml"/>
+    <mapping resource="com/frontboy/model/TUser.hbm.xml"/>
+    <mapping resource="com/frontboy/model/VUserRole.hbm.xml"/>
+    <mapping resource="com/frontboy/model/VComplaint.hbm.xml"/>
+    <mapping resource="com/frontboy/model/VEvaluation.hbm.xml"/>
+
+  </session-factory>
+</hibernate-configuration>
